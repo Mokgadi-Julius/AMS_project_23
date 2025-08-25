@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate AMS PROJECTS 23 Favicon</title>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32" style="border: 1px solid black; zoom: 10;"></canvas>
+    <br><br>
+    <button onclick="generateFavicon()">Generate Favicon</button>
+    <button onclick="downloadFavicon()">Download as favicon.ico</button>
+    <br><br>
+    <div id="preview"></div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        function generateFavicon() {
+            // Clear canvas
+            ctx.clearRect(0, 0, 32, 32);
+            
+            // Background gradient (blue to represent electrical/tech)
+            const gradient = ctx.createLinearGradient(0, 0, 32, 32);
+            gradient.addColorStop(0, '#1e3c72');
+            gradient.addColorStop(1, '#2a5298');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 32, 32);
+            
+            // Add border
+            ctx.strokeStyle = '#ffd700';
+            ctx.lineWidth = 1;
+            ctx.strokeRect(1, 1, 30, 30);
+            
+            // Draw "AMS" text in center
+            ctx.fillStyle = '#ffd700';
+            ctx.font = 'bold 8px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('AMS', 16, 12);
+            
+            // Draw "23" below
+            ctx.font = 'bold 6px Arial';
+            ctx.fillText('23', 16, 22);
+            
+            // Add small lightning bolt/electrical symbol
+            ctx.strokeStyle = '#00ff88';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(8, 8);
+            ctx.lineTo(12, 4);
+            ctx.lineTo(10, 8);
+            ctx.lineTo(14, 12);
+            ctx.lineTo(12, 8);
+            ctx.stroke();
+            
+            // Add small solar panel representation (right side)
+            ctx.fillStyle = '#00ff88';
+            ctx.fillRect(20, 4, 8, 6);
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 0.5;
+            ctx.strokeRect(20, 4, 4, 3);
+            ctx.strokeRect(24, 4, 4, 3);
+            ctx.strokeRect(20, 7, 4, 3);
+            ctx.strokeRect(24, 7, 4, 3);
+        }
+
+        function downloadFavicon() {
+            // Create different sizes
+            const sizes = [16, 32, 48];
+            const zip = new JSZip();
+            
+            sizes.forEach(size => {
+                const tempCanvas = document.createElement('canvas');
+                tempCanvas.width = size;
+                tempCanvas.height = size;
+                const tempCtx = tempCanvas.getContext('2d');
+                
+                // Scale the favicon
+                tempCtx.imageSmoothingEnabled = false;
+                tempCtx.drawImage(canvas, 0, 0, 32, 32, 0, 0, size, size);
+                
+                tempCanvas.toBlob(blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `favicon-${size}x${size}.png`;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                });
+            });
+            
+            // Download main favicon.ico
+            canvas.toBlob(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'favicon.ico';
+                a.click();
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        // Generate favicon on load
+        generateFavicon();
+    </script>
+</body>
+</html>

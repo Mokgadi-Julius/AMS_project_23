@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services - Solar, Electrical & Security Solutions | AMS PROJECTS 23</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Professional solar installation, electrical services & security systems in Johannesburg, Gauteng. C.O.C certified electricians, 24/7 emergency services, CCTV installation. Contact for free quotes.">
+<meta name="keywords" content="solar installation services Johannesburg, electrical services Gauteng, security systems installation, CCTV installation, electrical wiring, distribution board upgrades, solar panels, emergency electrician">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Our Services - Solar, Electrical & Security Solutions | AMS PROJECTS 23">
+<meta property="og:description" content="Professional solar installation, electrical services & security systems in Johannesburg. C.O.C certified, 24/7 support.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.amsprojects23.co.za/services.html">
+<meta property="og:image" content="https://www.amsprojects23.co.za/logo.png">
+
+<!-- Favicon Links -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+
+<!-- Services Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.amsprojects23.co.za/#business",
+    "name": "AMS PROJECTS 23",
+    "telephone": "+27638629975",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "14 Wheatley Road",
+      "addressLocality": "Regents Park",
+      "addressRegion": "Gauteng",
+      "postalCode": "2197",
+      "addressCountry": "ZA"
+    }
+  },
+  "serviceType": [
+    "Solar Panel Installation",
+    "Electrical Services", 
+    "Security Systems Installation",
+    "CCTV Installation",
+    "Emergency Electrical Services"
+  ],
+  "areaServed": [
+    "Johannesburg", "Sandton", "Randburg", "Roodepoort", "Soweto", "Midrand"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AMS Projects 23 Professional Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Solar System Installation",
+          "description": "Complete solar panel installation with inverters, batteries, and C.O.C certification"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Electrical Services",
+          "description": "Professional electrical wiring, distribution boards, fault finding, and C.O.C certificates"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Security Systems",
+          "description": "CCTV installation, electric fencing, gate automation, and surveillance systems"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Pro -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS (Animate On Scroll) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.services-hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 120px 0 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="30" r="1.5" fill="white" opacity="0.1"/><circle cx="40" cy="70" r="2.5" fill="white" opacity="0.1"/></svg>');
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.services-hero h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.services-hero p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.detailed-services {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.service-category {
+    margin-bottom: 80px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.category-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.category-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.category-header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0;
+}
+
+.service-item {
+    padding: 40px;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item:hover {
+    background: #f1f5f9;
+    transform: translateY(-5px);
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover::before {
+    transform: scaleY(1);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.service-icon i {
+    font-size: 2em;
+    color: white;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: #1e293b;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-item p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.service-features li {
+    padding: 8px 0;
+    color: #475569;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.contact-cta {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.contact-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+    text-decoration: none;
+    color: white;
+}
+
+.emergency-banner {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.emergency-banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.emergency-cta {
+    background: #ffd700;
+    color: #000;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+    animation: pulse 2s infinite;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+.emergency-cta:hover {
+    text-decoration: none;
+    color: #000;
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@media (max-width: 768px) {
+    .services-hero h1 { font-size: 2.5em; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-item { padding: 30px 25px; }
+    .category-header { padding: 30px 25px; }
+    .emergency-cta { padding: 15px 30px; font-size: 1.1em; }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Header/Navigation -->
+<header class="header" id="header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="AMS PROJECTS 23 Logo" class="logo-image">
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="emergency-electrician-johannesburg.html" class="nav-link">Emergency</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="service-areas.html" class="nav-link">Areas</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="tel:+27638629975" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+27 63 862 9975</span>
+                </a>
+                <a href="index.html#contact" class="nav-cta">Get Quote</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Services Hero -->
+<section class="services-hero">
+    <div class="container">
+        <h1 data-aos="fade-up">Our Professional Services</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+            Comprehensive solar, electrical, and security solutions for homes and businesses across Johannesburg, Gauteng
+        </p>
+    </div>
+</section>
+
+<!-- Detailed Services -->
+<section class="detailed-services">
+    <div class="container">
+        
+        <!-- Solar Services -->
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header">
+                <h2><i class="fas fa-solar-panel"></i> Solar Energy Solutions</h2>
+                <p>Harness the power of the sun with our premium solar installations and energy storage systems</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Solar Systems</h3>
+                    <p>Complete solar solutions for your home, designed to maximize energy savings and reduce electricity bills. Our systems are sized specifically for your household's energy consumption.</p>
+                    <ul class="service-features">
+                        <li>Custom system design and sizing</li>
+                        <li>Premium Tier-1 solar panels</li>
+                        <li>Hybrid inverter installations</li>
+                        <li>Battery backup systems</li>
+                        <li>C.O.C certification included</li>
+                        <li>10-year system warranty</li>
+                        <li>Professional installation</li>
+                        <li>Monitoring and maintenance support</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Get Free Quote
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Solar Installations</h3>
+                    <p>Large-scale solar solutions for businesses, warehouses, and industrial facilities. Reduce operational costs and improve your company's sustainability profile.</p>
+                    <ul class="service-features">
+                        <li>Industrial-grade equipment</li>
+                        <li>High-capacity system design</li>
+                        <li>Three-phase inverter systems</li>
+                        <li>Grid-tie and off-grid solutions</li>
+                        <li>Energy management systems</li>
+                        <li>ROI analysis and projections</li>
+                        <li>Maintenance contracts available</li>
+                        <li>Tax incentive consultation</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Contact for Quote
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Energy Storage Solutions</h3>
+                    <p>Advanced battery storage systems to store excess solar energy for use during power outages or peak demand periods.</p>
+                    <ul class="service-features">
+                        <li>Lithium-ion battery systems</li>
+                        <li>Backup power solutions</li>
+                        <li>Load-shedding protection</li>
+                        <li>Smart energy management</li>
+                        <li>Scalable storage capacity</li>
+                        <li>Remote monitoring capabilities</li>
+                        <li>Seamless power switching</li>
+                        <li>Long-life battery technology</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Discuss Options
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Solar System Maintenance</h3>
+                    <p>Keep your solar investment performing at peak efficiency with our comprehensive maintenance and support services.</p>
+                    <ul class="service-features">
+                        <li>Annual system inspections</li>
+                        <li>Panel cleaning services</li>
+                        <li>Performance monitoring</li>
+                        <li>Component replacement</li>
+                        <li>Inverter servicing</li>
+                        <li>Battery maintenance</li>
+                        <li>System optimization</li>
+                        <li>Warranty claim assistance</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Schedule Service
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electrical Services -->
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                <h2><i class="fas fa-bolt"></i> Electrical Services</h2>
+                <p>Professional electrical installations, repairs, and maintenance by certified electricians</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Electrical Work</h3>
+                    <p>Complete electrical solutions for homes, from new installations to upgrades and repairs. All work is performed to South African electrical standards.</p>
+                    <ul class="service-features">
+                        <li>New house wiring installations</li>
+                        <li>Electrical system upgrades</li>
+                        <li>Outlet and switch installations</li>
+                        <li>Lighting installations</li>
+                        <li>Ceiling fan installations</li>
+                        <li>Electrical appliance connections</li>
+                        <li>Safety inspections</li>
+                        <li>Code compliance work</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Call for Service
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Commercial Electrical Services</h3>
+                    <p>Comprehensive electrical services for businesses, offices, retail spaces, and industrial facilities with minimal disruption to operations.</p>
+                    <ul class="service-features">
+                        <li>Commercial wiring systems</li>
+                        <li>Three-phase installations</li>
+                        <li>Industrial electrical work</li>
+                        <li>Emergency lighting systems</li>
+                        <li>Power distribution systems</li>
+                        <li>Motor installations</li>
+                        <li>Electrical panel upgrades</li>
+                        <li>After-hours service available</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Request Quote
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Distribution Board Services</h3>
+                    <p>Modern distribution board installations and upgrades to improve electrical safety and accommodate increased power demands.</p>
+                    <ul class="service-features">
+                        <li>New DB board installations</li>
+                        <li>Old fuse box replacements</li>
+                        <li>Circuit breaker installations</li>
+                        <li>Earth leakage protection</li>
+                        <li>Surge protection devices</li>
+                        <li>Load balancing services</li>
+                        <li>Safety compliance upgrades</li>
+                        <li>C.O.C documentation</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Get Assessment
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Electrical Fault Finding</h3>
+                    <p>Expert diagnosis and repair of electrical problems using advanced testing equipment to quickly identify and resolve issues.</p>
+                    <ul class="service-features">
+                        <li>Power outage diagnosis</li>
+                        <li>Circuit testing and analysis</li>
+                        <li>Short circuit identification</li>
+                        <li>Earth fault detection</li>
+                        <li>Electrical safety testing</li>
+                        <li>Insulation resistance testing</li>
+                        <li>Load testing services</li>
+                        <li>Emergency troubleshooting</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Emergency Call
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Security Services -->
+        <div class="service-category" data-aos="fade-up">
+            <div class="category-header" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+                <h2><i class="fas fa-shield-alt"></i> Security Systems</h2>
+                <p>Advanced security solutions to protect your property, family, and business assets</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>CCTV Surveillance Systems</h3>
+                    <p>State-of-the-art CCTV systems with high-definition cameras, night vision, and remote monitoring capabilities for complete security coverage.</p>
+                    <ul class="service-features">
+                        <li>4K Ultra HD cameras</li>
+                        <li>Night vision technology</li>
+                        <li>Motion detection alerts</li>
+                        <li>Remote smartphone access</li>
+                        <li>Cloud storage options</li>
+                        <li>AI-powered analytics</li>
+                        <li>Professional installation</li>
+                        <li>System monitoring services</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Security Quote
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Electric Fencing Systems</h3>
+                    <p>Perimeter protection with electric fencing systems designed to deter intruders while ensuring safety for authorized personnel.</p>
+                    <ul class="service-features">
+                        <li>High-voltage deterrent systems</li>
+                        <li>Safety compliance standards</li>
+                        <li>Backup power integration</li>
+                        <li>Alarm system integration</li>
+                        <li>Professional installation</li>
+                        <li>Regular maintenance services</li>
+                        <li>Warning signage included</li>
+                        <li>System monitoring options</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Fence Quote
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3>Gate Automation Systems</h3>
+                    <p>Convenient and secure automated gate systems with remote control access, intercoms, and safety features for residential and commercial properties.</p>
+                    <ul class="service-features">
+                        <li>Swing and sliding gate motors</li>
+                        <li>Remote control access</li>
+                        <li>Intercom systems</li>
+                        <li>Safety beam installation</li>
+                        <li>Battery backup systems</li>
+                        <li>Access control integration</li>
+                        <li>Smartphone app control</li>
+                        <li>Professional installation</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Automation Quote
+                    </a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Integrated Security Solutions</h3>
+                    <p>Comprehensive security packages that combine multiple systems for complete property protection with centralized monitoring and control.</p>
+                    <ul class="service-features">
+                        <li>Multi-system integration</li>
+                        <li>Centralized control panels</li>
+                        <li>Mobile app management</li>
+                        <li>24/7 monitoring services</li>
+                        <li>Alarm system integration</li>
+                        <li>Emergency response protocols</li>
+                        <li>Regular system updates</li>
+                        <li>Technical support included</li>
+                    </ul>
+                    <a href="contact-options.html" class="contact-cta">
+                        <i class="fas fa-phone"></i>
+                        Complete Solution
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Emergency Services Banner -->
+<section class="emergency-banner">
+    <div class="container">
+        <h2><i class="fas fa-exclamation-triangle"></i> 24/7 Emergency Services</h2>
+        <p style="font-size: 1.2em; margin-bottom: 30px;">
+            Electrical emergencies don't wait for business hours. We're available around the clock for urgent repairs and safety issues.
+        </p>
+        <a href="tel:+27638629975" class="emergency-cta">
+            <i class="fas fa-phone"></i> EMERGENCY HOTLINE: +27 63 862 9975
+        </a>
+        <p style="margin-top: 20px; font-size: 1.1em;">
+            Average response time: 30 minutes across Johannesburg
+        </p>
+    </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-container">
+    <div class="whatsapp-popup" id="whatsapp-popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <i class="fab fa-whatsapp"></i>
+                <span>Chat Now!</span>
+            </div>
+            <p>Need help? Let's chat on WhatsApp</p>
+            <div class="popup-arrow"></div>
+        </div>
+    </div>
+    <a href="https://wa.me/27638629975" target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-ripple"></div>
+        <div class="whatsapp-ripple ripple-delay"></div>
+    </a>
+</div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section company-info">
+                <img src="logo_white.png" alt="AMS PROJECTS 23 Logo" class="footer-logo-image">
+                <p class="company-description">
+                    Leading provider of premium solar installations, electrical services, 
+                    and security systems in Johannesburg, Sandton, Randburg, Roodepoort, and all Gauteng. 
+                    C.O.C certified, licensed electricians. Excellence in every project.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/amsprojects23" target="_blank" rel="noopener" aria-label="Facebook - AMS Projects 23"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/amsprojects23" target="_blank" rel="noopener" aria-label="Twitter - AMS Projects 23"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/ams-projects-23" target="_blank" rel="noopener" aria-label="LinkedIn - AMS Projects 23"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/amsprojects23" target="_blank" rel="noopener" aria-label="Instagram - AMS Projects 23"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/27638629975" target="_blank" rel="noopener" aria-label="WhatsApp - Contact AMS Projects 23"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://g.page/r/EXAMPLE123" target="_blank" rel="noopener" aria-label="Google My Business - AMS Projects 23"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Solar System Installation</a></li>
+                    <li><a href="services.html">Electrical Services</a></li>
+                    <li><a href="services.html">Security Systems</a></li>
+                    <li><a href="services.html">CCTV Installation</a></li>
+                    <li><a href="emergency-electrician-johannesburg.html">Emergency Repairs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li>14 Wheatley Road</li>
+                    <li>Regents Park, Johannesburg South</li>
+                    <li>2197, Gauteng</li>
+                    <li><a href="tel:+27638629975">+27 63 862 9975</a></li>
+                    <li><a href="mailto:info@amsprojects23.co.za">info@amsprojects23.co.za</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2024 AMS Projects 23. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-container">
+    <div class="whatsapp-popup" id="whatsapp-popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <i class="fab fa-whatsapp"></i>
+                <span>Chat Now!</span>
+            </div>
+            <p>Need help? Let's chat on WhatsApp</p>
+            <div class="popup-arrow"></div>
+        </div>
+    </div>
+    <a href="https://wa.me/27638629975" target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-ripple"></div>
+        <div class="whatsapp-ripple ripple-delay"></div>
+    </a>
+</div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+<script>
+// Initialize AOS
+AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+});
+
+// Track service inquiries
+document.querySelectorAll('.contact-cta').forEach(button => {
+    button.addEventListener('click', function() {
+        const serviceName = this.closest('.service-item').querySelector('h3').textContent;
+        console.log('Service inquiry:', serviceName);
+        // Add analytics tracking here
+    });
+});
+</script>
+
+</body>
+</html>

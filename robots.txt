@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /*.css
+Allow: /*.js
+
+Sitemap: https://www.amsprojects23.co.za/sitemap.xml
+
+# Local SEO specific
+Allow: /contact
+Allow: /services
+Allow: /projects
+Allow: /about
+
+# Block unnecessary crawling
+Disallow: /firebase.json
+Disallow: /*.log
+Disallow: /tmp/
